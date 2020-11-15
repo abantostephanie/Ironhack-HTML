@@ -7,12 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- css -->
-    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymus"></script>
+    <script src= "https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymus"></script>
 
     <style>
         h1{color:purple;}
@@ -22,12 +24,12 @@
 <body>
    <!-- header  -start -->
    <header>
-    <div><img src ="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"> </div>
+    <div><img src ="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header"> </div>
        <div>
            <ul>
-                <li>Features</li>
-                <li>Testimonials</li>
-                <li>Try</li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#trial">Try</a></li>
             </ul>
        </div> 
     </header>
@@ -35,48 +37,51 @@
     <!-- header - end -->
     
     <!-- hero - start -->
-     <section>
+     <section id="hero">
          <h1 style="color: seagreen;">Heading 1 Text</h1>
      </section> 
     <!-- hero - end -->
 
 
     <!-- features - start -->
-    <Section> <!--row-->
-        <h3>Feature Title</h3> <!--row-->
+    <Section id="features"> <!--row-->
+        <h3 class="col-headings">Feature Title</h3> <!--row-->
 
-        <div><!--row-->
-            <div> <!--col-->
-                <i class= fas fa da></i> i
+        <div class="row-features"><!--row-->
+            <div class="col col-features"> <!--col-->
+                <i class="fas fa-balance-scale fa-4x"></i> 
+                <h4>Well Balanced</h4>
+             </div> 
+            <div class="col col-features"> <!--col-->
+                <i class=" fab fa-btc fa-4x"></i>
+                <h4>We accept Bitcoins</h4>
+            </div> 
+            <div class="col col-features"> <!--col-->
+                <i class="fas fa-chess-queen fa-4x"> </i>
                 <h4>text</h4>
-        </div> 
-            <div> <!--col-->
-                icon
-                <h4>text</h4>
-        </div> 
-            <div> <!--col-->
-                icon 
-                <h4>well balanced</h4>
-        </div> 
+             </div> 
         </div>
     </Section>
      <!-- features - end -->
  
   
      <!-- testimonials - start -->
-    <section>
+    <section id="testimonial">
         
-    <div> <!--Testimonial 1-->
-            <h2> Text</h2>
-            <img src="">
+    <div class="col col-testimonials"> <!--Testimonial 1-->
+            <h2>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</h2>
+            <img src="img/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="avatar">
+            <h5> Ben Parker</h5>
         </div>
-    <div><!--Testimonial 2-->
-        <h2> Text</h2>
-            <img src="">
+    <div class="col col-testimonials"><!--Testimonial 2-->
+        <h2 style="color: midnightblue;">This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</h2>
+            <img src="img/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" class="avatar">
+            <h5>Chris Campbell</h5>
         </div>
-    <div><!--Testimonial 3-->
-        <h2> Text</h2>
-        <img src="">
+    <div class="col col-testimonials"><!--Testimonial 3-->
+        <h2>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</h2>
+        <img src="img/roland-cousins-3GTHyh2lo9o-unsplash.jpg" class="avatar">
+        <h5>Roland Cousins</h5>
     </div>
     </section>   
     
@@ -84,13 +89,19 @@
 
 
      <!-- newsletter - start -->
-    <section>
-        <h3> Heading 3 Newletter</h3>
-        <div>
-            Name
-            Email
-            Send Button
-        </div>
+    <section id="trial">
+        <h3> Stay on the loop</h3>
+        <div class="row-trial">
+            <form action="#">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Type your name" id="name">
+            <label for=Email></label>
+            <input type="email" placeholder="Type your email" id="email">
+            <input type="submit">       
+        </form>
+    
+      
+    </div>
     </section>
     <!-- newsletter - end -->
 
@@ -99,12 +110,11 @@
      <div>
         <img src ="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"> 
     </div>
-     <div>
+    
+    <div>
         <p> menu on footer</p>  
      </div>
-    
-        
-       
+          
      </footer>    
         <!-- footer - end -->
      </footer>
