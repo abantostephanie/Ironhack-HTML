@@ -16,10 +16,24 @@
     <!-- css -->
     <script src= "https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymus"></script>
 
-    <style>
+    <!--style>
+        <style>
         h1{color:purple;}
         h2{color:tomato}
-    </style>
+    </style> -->
+
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
+
+</style>
 </head>
 <body>
    <!-- header  -start -->
@@ -64,9 +78,14 @@
     </Section>
      <!-- features - end -->
  
-  
+     <img src="img/kevin-ku-aiyBwbrWWlo-unsplash.jpg">
      <!-- testimonials - start -->
-    <section id="testimonial">
+     <div class="slider">
+        <div>I am a slide.</div>
+        <div>I am another slide.</div>
+      </div>
+
+    <section id="testimonial" class="slider">
         
     <div class="col col-testimonials"> <!--Testimonial 1-->
             <h2>This establishes the main-axis, thus defining the direction flex items are placed in the flex container. Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns.</h2>
@@ -107,15 +126,20 @@
 
     <!-- footer - start -->
     <footer> 
-     <div>
-        <img src ="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"> 
-    </div>
-    
-    <div>
-        <p> menu on footer</p>  
+        
+    <div class="row-footer">
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#trial">Try</a></li>
+        </ul>
      </div>
-          
-     </footer>    
+     
+     <div class="row-footer">
+        <img src ="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg"> 
+    </div>      
+    
+    </footer>    
         <!-- footer - end -->
      </footer>
 </body>
